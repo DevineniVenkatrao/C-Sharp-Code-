@@ -1,0 +1,74 @@
+Main(
+	double amount=0;
+           int  customerChoice=0;
+int weight=0;
+int size=0;
+Console.WriteLine("Vending Machine Options");
+Console.WriteLine("1 -  Cola");
+Console.WriteLine("2 -  Chips");
+Console.WriteLine("3 - Candy");
+
+Console.Write("Select Product : ");
+customerChoice = Convert.ToInt32(Console.ReadLine());
+
+if (customerChoice<1 || customerChoice>3)
+{
+console.WriteLine(“ Invalid Input and please select correct product “);
+}
+
+Switch
+{
+case 1:
+ customerChoice = Convert.ToInt32(Console.ReadLine());
+amount=amount+1;
+break;
+case 2:
+ customerChoice = Convert.ToInt32(Console.ReadLine());
+amount=amount+0.50;
+break;
+case 3:
+ customerChoice = Convert.ToInt32(Console.ReadLine());
+amount=amount+0.65;
+break;
+
+default:
+Console.WriteLine(“ Please Select any product which means to select 1 to 3 options”);
+break;
+
+}
+
+Console.WriteLine(“ Total Amount is”+ amount);
+Console.WriteLine(“Please Insert coins”);
+
+// The weight and size will reading from machine
+weight= Convert.ToInt32(Console.ReadLine());
+size = Convert.ToInt32(Console.ReadLine());
+
+// This is for $1
+Switch
+{
+case 1:
+amount=amount-1;
+break;
+case 2:
+amount=amount-0.50;
+break;
+case 3:
+amount=amount0.65;
+break;
+}
+
+If (amount==0)
+{
+Console.WriteLine (“ Please collect the products.  /n  !!Thank you Visisit Again !! ”);
+}
+else 
+{
+Console.WriteLine(“ The transaction has failed due to following reasons”);
+Console.WriteLine(“/n  1 . The Amount you inserted is not sufficient”);
+Console.WriteLine(“/n 2 . Invalid Coins you inserted”);
+}
+
+
+
+)
